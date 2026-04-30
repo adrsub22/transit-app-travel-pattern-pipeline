@@ -1,0 +1,102 @@
+# Sample Outputs
+
+This project creates several GIS-ready outputs that can be used in ArcGIS Online dashboards, web maps, planning reports, or internal analysis tools.
+
+---
+
+## Origin-destination line layer
+
+**Purpose:** Shows summarized movement between origin and destination geographies.
+
+**Example use:** A planner can view which areas are generating trips to other areas and identify strong movement patterns.
+
+**Typical fields:**
+
+- analysis date,
+- origin geography ID,
+- destination geography ID,
+- service type,
+- route identifier,
+- trip count,
+- average travel time,
+- average distance.
+
+---
+
+## Destination geography summary layer
+
+**Purpose:** Shows destination activity summarized into planning polygons such as block groups, zones, districts, or other local geographies.
+
+**Example use:** A dashboard can show the top destinations from a selected origin area or highlight geographies with high recent activity.
+
+**Typical fields:**
+
+- origin geography ID,
+- destination geography ID,
+- trip count,
+- destination rank,
+- percent of origin activity,
+- average travel time,
+- average distance.
+
+---
+
+## Transfer hotspot point layer
+
+**Purpose:** Identifies locations where transfers are commonly occurring.
+
+**Example use:** A planning team can identify high-activity transfer points that may warrant closer review, improved passenger information, or service coordination.
+
+**Typical fields:**
+
+- analysis date,
+- from route,
+- to route,
+- transfer pattern,
+- transfer type,
+- transfer count,
+- average transfer time,
+- transfer stop or location.
+
+---
+
+## Unified transfer-pattern layer
+
+**Purpose:** Provides a more detailed transfer output with both step-level and chain-level metrics.
+
+**Example use:** A dashboard can filter by full transfer pattern while still mapping individual transfer steps.
+
+**Typical fields:**
+
+- transfer sequence,
+- from route,
+- to route,
+- leg transfer pattern,
+- full transfer pattern,
+- hotspot count,
+- pattern count,
+- average wait time,
+- average chain wait time,
+- average leg travel time,
+- average chain travel time,
+- average leg distance,
+- average chain distance.
+
+---
+
+## Monthly route-share table
+
+**Purpose:** Provides route-level monthly summary of Transit App usage compared to APC Ridership counts.
+
+**Example use:** A dashboard can compare activity captured in the mobility dataset against a broader route-level ridership or activity baseline.
+
+**Typical fields:**
+
+- month,
+- route identifier,
+- route name,
+- mobility trip count,
+- baseline ridership or activity count,
+- share or ratio metric.
+
+---
