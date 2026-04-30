@@ -1,0 +1,44 @@
+# Example configuration for the sanitized portfolio workflow.
+# Replace placeholder values with local paths, service names, and data sources.
+
+database:
+  driver: "ODBC Driver 17 for SQL Server"
+  server: "YOUR_SERVER_NAME"
+  database: "YOUR_DATABASE_NAME"
+  trip_leg_table: "schema.cleaned_trip_legs"
+  trusted_connection: true
+
+arcgis:
+  aprx_path: "C:/path/to/project.aprx"
+  map_name: "Publish"
+  scratch_dir: "C:/path/to/scratch"
+  gdb_folder: "C:/path/to/geodatabase_folder"
+  gdb_name: "mobility_outputs.gdb"
+  hosted_services:
+    od_lines: "Mobility_OD_7Day"
+    od_polygons: "Mobility_DestinationPolygons_7Day"
+    transfer_hotspots: "Mobility_TransferHotspots_31Day"
+    transfer_unified: "Mobility_TransferUnified_31Day"
+    monthly_route_share: "Mobility_Monthly_RouteShare"
+
+analysis_windows:
+  od_lag_days: 3
+  od_analysis_days: 7
+  transfer_lag_days: 3
+  transfer_analysis_days: 31
+
+geography:
+  geography_prefix: "12345"
+  polygon_feature_class: "C:/path/to/planning_geographies"
+  geography_id_field: "GEOID"
+
+safeguards:
+  future_cushion_hours: 6
+  max_leg_minutes: 720
+  max_transfer_gap_minutes: 120
+  max_transfer_jump_miles: 0.75
+  same_route_collapse_max_minutes: 3
+
+service_labels:
+  fixed_route: "Fixed Route"
+  on_demand: "On Demand"
