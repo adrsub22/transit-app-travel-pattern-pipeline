@@ -102,8 +102,7 @@ This workflow can support:
 - scenario and baseline condition reporting
 - spatial storytelling
 
-## About
+## Author
 
 Built by Andrew Reyna, a transit planner / data analyst based in San Antonio.
-Currently working at VIA Metropolitan Transit, with
-a background in Urban Planning. Find me at adrsub22@gmail.com
+with a background in Urban Planning. Find me at adrsub22@gmail.com
